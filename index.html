@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <style>
+        /* Estilos básicos para o site já nascer organizado e responsivo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container-cadastro {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .grupo-campo {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666666;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Garante que o padding não quebre a largura */
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container principal que centraliza o formulário -->
+    <main class="container-cadastro">
+        <h2>Criar Conta</h2>
+       
+        <!-- Formulário de cadastro preparado para futuras integrações (PHP, Node.js, etc) -->
+        <form action="#" method="POST">
+           
+            <!-- Campo: Nome -->
+            <div class="grupo-campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- Campo: E-mail -->
+            <div class="grupo-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <!-- Campo: Senha -->
+            <div class="grupo-campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+            </div>
+
+            <!-- Campo: Perfil (Exemplo de Select para expansão futura) -->
+            <div class="grupo-campo">
+                <label for="tipo">Tipo de Usuário</label>
+                <select id="tipo" name="tipo">
+                    <option value="cliente">Cliente</option>
+                    <option value="desenvolvedor">Desenvolvedor</option>
+                </select>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit">Cadastrar</button>
+           
+        </form>
+    </main>
+
+</body>
+</html>

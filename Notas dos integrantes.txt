@@ -1,0 +1,2 @@
+Vitória:28/08
+comecei a fazer o codigo no arquivo html, ele esta cru e é para ser encrementado com o css na proxima aula.
